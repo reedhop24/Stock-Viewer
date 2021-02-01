@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{%block content%}
+    <div class="container justify-content-center">
+        <div class="row sub-title">
+            <div class="col"></div>
+            <div class="col">
+                <h4 class="text-center">Login</h4>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <form class="login-page" id="login-submit">
+                    <div class="mb-3" id="error-container"></div>
+                    <div class="mb-3">
+                        <label for="login-email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="login-password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="login-password">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input checkbox" id="login-check">
+                        <label class="form-check-label" for="exampleCheck1">Stay Signed In</label>
+                    </div>
+                    <div>
+                        <button class="btn shadow-none" id="sign-up-btn">No Account? Sign Up</button>
+                        <button class="btn shadow-none">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

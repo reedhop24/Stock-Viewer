@@ -1,0 +1,163 @@
+.col-6 {
+    border-radius: 2px solid;
+    justify-content: center;
+}
+
+.login-page {
+    margin-top:5%;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(195, 204, 207);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.sub-title {
+    margin-top:5%;
+}
+
+#error-container {
+    text-align: center;
+    color:red;
+}
+
+.search {
+    display: inline-block;
+}
+
+.stock-tick-search {
+    padding-left:10%;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+#stock-tick {
+    height: 25px;
+    top: 5px;
+}
+
+.stock-tick-container {
+    margin-top: 2%;
+}
+
+.stock-tick-input {
+    display: inline-block;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+
+#stock-date {
+    padding-left:20px;
+}
+
+#stock-button {
+    padding-left:40px;
+}
+
+#search-error {
+    text-align: center;
+    color:red;
+    margin-top: 5%;
+}
+
+.form-row {
+    margin-top:20px;
+}
+
+.button-container {
+    justify-content: center;
+}
+
+.search-wrapper {
+    margin-top:50px;
+}
+
+.chart-inner {
+    margin-top:60px;
+    border: 1px solid rgb(195, 204, 207);
+    padding:40px;
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius:5px;
+}
+
+#add-view {
+    margin-top:40px;
+}
+
+#stock-name{
+    margin-bottom:40px;
+}
+
+.deleted-graph {
+    color: red;
+    margin-bottom: 30px;
+}
+
+#nav-container {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+nav {
+    background-color: #00c07f;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.nav-items {
+    color: white;
+}
+
+.nav-items:hover {
+    color: #cd5554;
+}
+
+a {
+    color: white;
+}
+
+body {
+    font-family: 'Almarai', sans-serif;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.title:hover {
+    color: white;
+}
+
+.btn {
+    border: 1px solid #cd5554;
+    color: #cd5554;
+    border-radius: 3px;
+    font-family: 'Almarai', sans-serif;
+    font-family: 'Red Hat Text', sans-serif;     
+    font-weight: bold;   
+    outline: none !important;
+    box-shadow: none;
+}
+
+.btn:hover {
+    background-color: #cd5554;
+    color:#00c07f;
+    cursor: pointer;
+}
+
+canvas {
+    margin-bottom: 30px;
+}
+
+
+.form-control:focus {
+    border-color: #cd5554;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+#stock-tick-button {
+    width:30%;
+}
+
+.modal-header {
+    background-color: #00c07f;
+    color: white;
+    font-weight: bold;
+}
+

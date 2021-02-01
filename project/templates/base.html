@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <head>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="{{url_for('static', filename='/css/index.css')}}" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Almarai&family=Red+Hat+Text:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid" id="nav-container">
+              <a class="navbar-brand title">StockCheck</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item" id="seach-item">
+                    <a class="nav-link active nav-items" aria-current="page" href="/search">Search</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active nav-items" aria-current="page" href="/collections">My Collection</a>
+                  </li>
+                </ul>
+                <span class="navbar-text log-out-container">
+                  <a class="nav-link nav-items btn" id="log-out">Log Out</a>
+                </span>
+              </div>
+            </div>
+          </nav>
+
+          <!-- Modal -->
+          <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                  <h5 class="modal-title" id="exampleModalLabel">Information</h5>
+                </div>
+                <div class="modal-body"></div>
+              </div>
+            </div>
+          </div>
+          <div class="justify-content-center main-body">
+            {% block content %}
+            {% endblock %}
+          </div>
+          <footer>
+            <!--static files-->
+            <script src="{{ url_for('static', filename='/js/auth.js') }}"></script>
+            <script src="{{ url_for('static', filename='/js/main.js') }}"></script>
+            <!--chart js-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.6.1/randomColor.min.js"></script>
+            <!--bootstrap-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+          </footer>
+    </body>

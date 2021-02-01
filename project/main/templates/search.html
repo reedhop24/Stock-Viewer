@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{%block content%}
+<div class="container justify-content-center search-wrapper">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <form class="login-page">
+                <div class="mb-3" id="search-error"></div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="stock-tick">Stock Ticker Symbol:</label>
+                        <input type="text" class="form-control" size="10" id="stock-tick">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="stock-tick">By:</label>
+                        <select class="form-control" id="breakdown">
+                            <option value="day">Day</option>
+                            <option value="month">Month</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="stock-tick">From Date:</label>
+                        <input type="date" class="form-control" id="date-input-from">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="stock-tick">To Date:</label>
+                        <input type="date" class="form-control" id="date-input-to">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col button-container text-center">
+                        <button id="stock-tick-button" class="btn shadow-none">Go</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+     
+    <div id="chart-container">
+    </div>
+</div>
+{% endblock %}
