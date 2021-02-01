@@ -23,7 +23,8 @@
 ##### Returning users are able to sign in with their email:
 ![stock-app-login](https://user-images.githubusercontent.com/40578449/106495257-4c0d8000-6470-11eb-89cc-82dc52036d43.PNG)
 ##### New users are able to register for an account:
-
+![stock-app-signup](https://user-images.githubusercontent.com/40578449/106495420-7fe8a580-6470-11eb-8747-3d17ba55073b.PNG)
 ##### Once signed in users are able to query stocks between a given date range to view the high, low, open and close of a stock. Users can breakdown that date range by either days or months, they can then save these graphs into their collection.
-
+![stock-app-search](https://user-images.githubusercontent.com/40578449/106495518-a3135500-6470-11eb-9c94-10659e9af246.PNG)
 ##### If a user navigates to their Collection they will see every graph that they had saved and will have the opportunity to delete those graphs from their collection. 
+![Stock-App-Collections](https://user-images.githubusercontent.com/40578449/106495571-b9b9ac00-6470-11eb-930e-ec1de916a991.PNG)
